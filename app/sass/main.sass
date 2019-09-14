@@ -1,0 +1,127 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+// Пользовательские стили
+
+.wrapper 
+    width: 700px
+    height: 700px
+    background: #ddd
+    border: 10px solid #bbb
+    margin: 50px auto
+
+    .container 
+        
+
+        .left 
+            width: 100%
+            color: #666
+            padding: 30px
+            
+            div 
+                display: flex
+                width: 100%
+                justify-content: space-between
+                padding-right: 15px
+
+                &:hover 
+                    background-color: #aaa
+
+                span 
+                    line-height: 60px
+
+
+            label 
+                color: #666
+                font-family: "BebasNeue-Regular"
+                font-weight: bold
+                font-size: 30px
+                display: inline-block
+                position: relative
+                padding: 8px
+                padding:
+
+                &:hover 
+
+
+                &:before 
+                    content: ""
+                    display: inline-block
+                    width: 30px
+                    position: relative
+                    bottom: -3px
+                    height: 30px
+                    border: 4px solid #666
+                    border-radius: 50% 
+                    margin-right: 10px
+
+                &:after
+                    
+
+            #inp1, #inp2, #inp3 
+                display: none
+
+                &:checked + label:after 
+                    content: ""
+                    width: 12px
+                    height: 12px
+                    background: #3af
+                    position: absolute
+                    border-radius: 50%
+                    top: 25px
+                    left: 17px
+                    right: 0
+                    bottom: 0                 
+
+
+    .center 
+        text-align: center
+        padding: 25px
+
+        p 
+            display: inline
+            font-family: sans-serif
+            color: #666
+
+    .bottom 
+        text-align: center
+
+        h1 
+            font-family: 'BebasNeue-Regular'
+
+            span 
+                color: #16c
+
+        button 
+            padding: 15px 60px
+            border-radius: 40px
+            border: none
+            background: #22ff66
+            color: #ffffff
+            font-family: 'BebasNeue-Regular'
+            font-size: 20px
+
+        p 
+            color: #0af
+            padding: 0 5px
+            border: 1px solid #0af
+            display: inline
+            border-radius: 10px
+
+            &:before 
+                content: ''
+                display: inline-block
+                width: 10px
+                height: 10px
+                border-radius: 50%
+                background-color: #0af
+                line-height: 12px
+                margin-right: 5px
+
+
+
+@import "media" // Всегда в конце
+    
+ 
